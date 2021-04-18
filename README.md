@@ -60,8 +60,9 @@ In this documantery for datasets will be used "df" variable name, and all variba
 - lineplot
 - facetgrid
 - groupby
-------------
-####### Sample Usage
+
+----
+###### Sample Usage
 
 - df[“VAR”] .value_counts().plot.barh().set_title(“test”);
 - sns.barplot(x = “VAR”, y = df.VAR.index, hue = “color” , data = df);
