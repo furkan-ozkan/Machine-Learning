@@ -45,11 +45,28 @@ In this documantery for datasets will be used "df" variable name, and all variba
 #####  Graphics
 
 ------------
+###### List
+- barplot
+- catplot
+- - could be used as default.
+- - kind = "point"
+- - kind = "violin"
+- histplot
+- kdeplot
+- scatterplot
+- lmplot
+- pairplot
+- heatmap (pivot df must be)
+- lineplot
+- facetgrid
+- groupby
+
+----
+####### Sample Usage
 - df[“VAR”] .value_counts().plot.barh().set_title(“test”);
 - sns.barplot(x = “VAR”, y = df.VAR.index, hue = “color” , data = df);
 - sns.catplot(x = “VAR” , y = “VAR2”,hue = “VAR3”,kind= “point”,data = df);
 - sns.catplot(x = “VAR” , kind= “violin”,data = df);
-- sns.bodfplot(x=“VAR”,y= “VAR2”,hue= “VAR3”,data=df)
 - sns.histplot(x.VAR, kde = False);
 - sns.kdeplot(x.Var,shade=True);
 - sns.scatterplot(x="total_bill",y="tip",hue="size",style="sedf",size="size",data=df);
