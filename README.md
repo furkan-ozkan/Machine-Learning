@@ -28,7 +28,7 @@ In this documantery for datasets will be used "df" variable name, and all variba
 - df.dtypes
 - df.shape
 - df.columns
-- df.describe().T -> optionel -> df.describe(include = “all”).T
+- df.describe().T-> optionel -> df.describe(include = “all”).T
 - df[“VAR”].describe()
 - df.column.unique()
 ##### Missing Values
@@ -36,7 +36,6 @@ In this documantery for datasets will be used "df" variable name, and all variba
 ------------
 - df.isnull().sum()
 - df.["VAR"].fillna(0,inplace = True) -> 0 can be change, this code right now means “all nan values must be zero”
-
 ##### Categorical
 
 ------------
@@ -47,7 +46,6 @@ In this documantery for datasets will be used "df" variable name, and all variba
 - df[“VAR”] .value_counts().count()
 - df.VAR.astype(CategoricalDtype( categories = [1,2,3,4…], ordered = True))
 - df.index=pd.DatetimeIndex(df.index)
-
 #####  Graphics
 
 ------------
