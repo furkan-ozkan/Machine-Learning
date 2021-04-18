@@ -10,7 +10,6 @@ In this documantery for datasets will be used "df" variable name, and all variba
 
 ------------
 
-
 - import numpy as np
 - import pandas as pd
 - import seaborn as sns
