@@ -6,6 +6,7 @@ In this documantery for datasets will be used "df" variable name, and all variba
 
 
 !pip install pandas_datareader
+!pip install researchpy
 ### Libs
 
 ------------
@@ -15,6 +16,7 @@ In this documantery for datasets will be used "df" variable name, and all variba
 - import seaborn as sns
 - import matplotlib as plt
 - import pandas_datareader as pr
+- import researchpy as rp
 - from pandas.api.types import CategoricalDtype
 ### Data Analyze
 ------------
@@ -25,6 +27,7 @@ In this documantery for datasets will be used "df" variable name, and all variba
 - df.shape
 - df.columns
 - df.describe().T-> optionel -> df.describe(include = “all”).T
+- rp.summary_cont(df.select_dtype(include = ["float64", "int64"]))
 - df[“VAR”].describe()
 - df.column.unique()
 ##### Missing Values
