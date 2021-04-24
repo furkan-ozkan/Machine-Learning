@@ -17,6 +17,7 @@ In this documantery for datasets will be used "df" variable name, and all variba
 - import matplotlib as plt
 - import pandas_datareader as pr
 - import researchpy as rp
+- import statnıdeksçstats.api as sms
 - from pandas.api.types import CategoricalDtype
 ### Data Analyze
 ------------
@@ -28,6 +29,10 @@ In this documantery for datasets will be used "df" variable name, and all variba
 - df.columns
 - df.describe().T-> optionel -> df.describe(include = “all”).T
 - rp.summary_cont(df.select_dtype(include = ["float64", "int64"]))
+- rp.summary_cat(df.select_dtype("categorical"))
+- sms.DescrStatsW(df).tconfint_mean() -> %95 ortalama güven aralığı hesaplama
+- df[["VAR","VAR2]].cov() -> kovaryans
+- df[["VAR","VAR2]].corr() -> korelasyon
 - df[“VAR”].describe()
 - df.column.unique()
 ##### Missing Values
