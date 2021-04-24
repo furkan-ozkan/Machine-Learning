@@ -18,6 +18,7 @@ In this documantery for datasets will be used "df" variable name, and all variba
 - import pandas_datareader as pr
 - import researchpy as rp
 - import statnıdeksçstats.api as sms
+- import scipy.stats import bernoulli
 - from pandas.api.types import CategoricalDtype
 ### Data Analyze
 ------------
@@ -35,6 +36,11 @@ In this documantery for datasets will be used "df" variable name, and all variba
 - df[["VAR","VAR2]].corr() -> korelasyon
 - df[“VAR”].describe()
 - df.column.unique()
+
+### Statistics
+------------
+- rv = bernoulli(df) -> rv.pmf(k=0)
+- 
 ##### Missing Values
 
 ------------
